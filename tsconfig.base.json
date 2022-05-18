@@ -3,7 +3,9 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
+    "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
 
     "declaration": true,
     "emitDeclarationOnly": true,

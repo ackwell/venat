@@ -2,7 +2,7 @@
   "name": "@the-convocation/venat-module-example",
   "version": "0.3.0",
   "packageManager": "yarn@3.2.1",
-  "main": "dist/src/module.js",
+  "main": "dist/module.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "yarn clean && tsc"

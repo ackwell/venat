@@ -3,10 +3,5 @@ import { VenatModuleMetadata } from './module-system/venat-module.metadata';
 import { LookupResult } from './util/io';
 import { cleanText, TextParameter } from './util/text';
 
-export {
-  cleanText,
-  LookupResult,
-  TextParameter,
-  VenatModule,
-  VenatModuleMetadata,
-};
+export { cleanText, VenatModule };
+export type { LookupResult, TextParameter, VenatModuleMetadata };

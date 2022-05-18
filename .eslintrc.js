@@ -18,6 +18,7 @@ module.exports = {
     '.eslintrc.js',
     'core/src/database/migrations/**/*.{ts,js}',
     '**/test/**',
+    '**/dist/**',
   ],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',

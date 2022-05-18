@@ -1,5 +1,5 @@
 import { DynamicModule, Logger, Module } from '@nestjs/common';
-import * as resolvePackagePath from 'resolve-package-path';
+import resolvePackagePath from 'resolve-package-path';
 import * as path from 'path';
 import * as fs from 'fs/promises';
 import { VenatModuleMetadata } from './venat-module.metadata';

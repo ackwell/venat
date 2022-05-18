@@ -4,20 +4,20 @@
   "description": "open source ffxiv community discord bot that's incredibly easy to self-host",
   "author": "The Convocation contributors",
   "license": "AGPL-3.0-only",
-  "main": "dist/src/module.js",
+  "main": "dist/module.js",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "yarn clean && tsc",
+    "build": "yarn clean && tsc && babel src --out-dir dist --extensions .ts --root-mode upward --source-maps true",
     "format": "prettier --write src/**/*.ts test/**/*.ts",
-    "start": "node ./dist/src/main.js",
-    "dev": "yarn build && node ./dist/src/main.js",
+    "start": "node ./dist/main.js",
+    "dev": "yarn build && node ./dist/main.js",
     "lint": "eslint {src,test}/**/*.ts --fix",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
-    "migration:create": "yarn build && npx typeorm migration:generate -p -d ./dist/src/database/cli-helper.datasource.js"
+    "migration:create": "yarn build && npx typeorm migration:generate -p -d ./dist/database/cli-helper.datasource.js"
   },
   "jest": {
     "moduleFileExtensions": [
@@ -45,6 +45,7 @@
     "@sentry/node": "^6.19.7"
   },
   "devDependencies": {
+    "@babel/cli": "^7.17.10",
     "eslint": "^8.0.1",
     "jest": "28.0.3",
     "prettier": "^2.3.2",
