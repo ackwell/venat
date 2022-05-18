@@ -1,21 +1,25 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+
     "declaration": true,
+    "emitDeclarationOnly": true,
+    "stripInternal": true,
     "removeComments": true,
+    "skipLibCheck": true,
+
+    "strict": true,
+
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2022",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "rootDir": "./",
-    "composite": true,
-    "incremental": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": false,
+    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": false,
-    "useDefineForClassFields": true
+    "useDefineForClassFields": true,
+
+    "composite": true,
+    "incremental": true
   }
 }

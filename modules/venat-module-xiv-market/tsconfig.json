@@ -3,7 +3,6 @@
   "compilerOptions": {
     "baseUrl": ".",
     "rootDir": ".",
-    "sourceRoot": "src",
     "outDir": "./dist"
   },
   "references": [{ "path": "../../core" }]
