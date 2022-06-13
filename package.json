@@ -6,7 +6,8 @@
   "license": "AGPL-3.0-only",
   "workspaces": [
     "core",
-    "plugins/**"
+    "plugins/**",
+    "web"
   ],
   "scripts": {
     "clean": "yarn workspaces foreach -pt run clean",
